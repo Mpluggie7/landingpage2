@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.a4Part {
+  background-color: #e9ecef;
+  width: 400px;
+}
+
+.picPart {
+  width: 380px;
+}
+
+.backPicBlue {
+  width: 380px;
+  height: 190px;
+  background-color: #8aadde;
+}
+
+.coverPic {
+  top: 190px;
+}
+
+.imgUser {
+  width: 350px;
+  height: 350px;
+  object-position: 55% 50%;
+}
+
+.nameBlock {
+  top: 480px;
+}
+
+.fs48 {
+  font-size: 48px;
+}
+
+.profileContactPart div h1 {
+  color: #8aadde;
+}
+
+.fBlue {
+  color: #8aadde;
+}
+
+.year {
+  padding-left: 20px;
+}
+
+.comDetail {
+  padding-left: 20px;
+}
+
+.expRow {
+  position: relative;
+}
+
+.expRow::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  height: 100%;
+  border-left: 2px solid black;
+}
+
+.expRow::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.expRow:last-child::before {
+  content: "";
+  height: 0%;
+}
+
+.btmBluePart {
+  width: 85%;
+  height: 20px;
+  background-color: #8aadde;
+}
+
+.btmBlackPart {
+  width: 15%;
+  height: 20px;
+  background-color: black;
+}
+
+/* md */
+@media (min-width: 768px) {
+  .behindA4 {
+    padding: 64px 20px !important;
+  }
+
+  .a4Part {
+    width: 800px;
+  }
+
+  .year {
+    width: 25%;
+  }
+
+  .comDetail {
+    width: 75%;
+    padding-left: 0px;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  .a4Part {
+    height: calc(800px * 1.41);
+  }
+}

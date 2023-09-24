@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Resume</title>
+    <link rel="icon" type="image/x-icon" href="asset/icons/user.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="asset/css/index.css" />
+  </head>
+  <body>
+    <div class="behindA4 d-flex justify-content-center">
+      <div class="a4Part position-relative shadow-lg">
+        <div
+          class="topPart d-flex flex-column flex-md-row align-items-center gap-5 px-md-5"
+        >
+          <div class="picPart position-relative d-flex flex-column">
+            <div class="backPicBlue"></div>
+            <canvas id="backPic" width="380" height="420"></canvas>
+            <div class="coverPic position-absolute start-50 translate-middle">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                class="imgUser rounded-circle border border-4 border-light object-fit-cover"
+              />
+            </div>
+            <div class="nameBlock position-absolute start-50 translate-middle">
+              <div class="text-white text-center">
+                <p class="fs48 fw-light mb-0">Name</p>
+                <p class="fs48 fw-light mb-0">Surname</p>
+                <p class="fw-light fs-3">Job Position</p>
+              </div>
+            </div>
+          </div>
+          <div class="profileContactPart px-4 px-md-0 py-md-5">
+            <div class="profile py-4">
+              <h1>PROFILE</h1>
+              <h5>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                inventore expedita tempora illo fuga, similique distinctio quas
+                doloribus quod voluptatem cum laborum repellat sit dolore nulla
+                veniam quibusdam sunt iusto ratione harum libero numquam
+              </h5>
+            </div>
+            <div class="contact py-4">
+              <h1>CONTACT</h1>
+              <h5>+123456789</h5>
+              <h5>www.website.com</h5>
+              <h5>emailaddress@gmail.com</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="expPart px-4 px-md-5 py-4 d-flex flex-column gap-2">
+          <h1 class="fBlue">EXPERIENCE</h1>
+          <div>
+            <div class="expRow d-md-flex pb-4">
+              <div class="year">
+                <h5>2019-Present</h5>
+                <h5 class="fBlue">Job Position</h5>
+              </div>
+              <div class="comDetail">
+                <h5>Company Name</h5>
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur accusamus facere reiciendis est, dolorem pariatur
+                  ex adipisci porro, nobis quo sit numquam, ad totam laboriosam
+                  quas.
+                </p>
+              </div>
+            </div>
+            <div class="expRow d-md-flex pb-4">
+              <div class="year">
+                <h5>2018-2019</h5>
+                <h5 class="fBlue">Job Position</h5>
+              </div>
+              <div class="comDetail">
+                <h5>Company Name</h5>
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur accusamus facere reiciendis est, dolorem pariatur
+                  ex adipisci porro, nobis quo sit numquam, ad totam laboriosam
+                  quas.
+                </p>
+              </div>
+            </div>
+            <div class="expRow d-md-flex pb-4">
+              <div class="year">
+                <h5>2016-2018</h5>
+                <h5 class="fBlue">Job Position</h5>
+              </div>
+              <div class="comDetail">
+                <h5>Company Name</h5>
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur accusamus facere reiciendis est, dolorem pariatur
+                  ex adipisci porro, nobis quo sit numquam, ad totam laboriosam
+                  quas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btmA4 w-100 position-absolute bottom-0 d-flex">
+          <div class="btmBluePart"></div>
+          <div class="btmBlackPart"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.onload = function () {
+        const canvas = document.getElementById("backPic");
+        const context = canvas.getContext("2d");
+        context.moveTo(0, 0);
+        context.lineTo(0, 350);
+        context.lineTo(190, 420);
+        context.lineTo(380, 350);
+        context.lineTo(380, 0);
+        context.lineTo(0, 0);
+        context.stroke();
+        context.fillStyle = "#000";
+        context.fill();
+      };
+    </script>
+  </body>
+</html>
